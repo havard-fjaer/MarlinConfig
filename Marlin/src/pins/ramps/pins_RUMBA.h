@@ -46,12 +46,19 @@
 //
 // Limit Switches
 //
-#define X_MIN_PIN          37
+// #define X_MIN_PIN          37 // Used for FIL_RUNOUT_PIN
 #define X_MAX_PIN          36
 #define Y_MIN_PIN          35
 #define Y_MAX_PIN          34
 #define Z_MIN_PIN          33
 #define Z_MAX_PIN          32
+
+//
+// Filament Runout Sensor
+//
+#ifndef FIL_RUNOUT_PIN
+  #define FIL_RUNOUT_PIN   37
+#endif
 
 //
 // Z Probe (when not Z_MIN_PIN)
